@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+publicar/
+appsettings.Development.json
+publicar_em_progresso_*/
+publicar_anterior_*/

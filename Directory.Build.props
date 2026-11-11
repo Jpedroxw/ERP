@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Company>Projeto JP</Company>
+    <Product>Projeto JP</Product>
+    <Version>0.1.0</Version>
+    <!-- Uma unica versao de EF Core para API e testes, evitando CS1705. -->
+    <ErpEfCoreVersion>10.0.14</ErpEfCoreVersion>
+    <!-- Avisos de versão flutuante (10.0.*) não são erro -->
+    <NoWarn>$(NoWarn);NU1603;WFO5001</NoWarn>
+  </PropertyGroup>
+</Project>

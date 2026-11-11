@@ -1,0 +1,10 @@
+Código;Código de Barras;Descrição;Unidade;Grupo;Preço Custo;Preço Venda;Estoque
+1;7891000000014;Refrigerante Cola 2L;UND;Bebidas;6,10;R$ 9,99;48
+2;7891000000021;Água Mineral 500ml;UN;Bebidas;0,90;R$ 2,50;120
+3;7891000000038;Arroz Tipo 1 5kg;PCT;Mercearia;18,40;R$ 27,90;30
+4;7891000000045;Feijão Carioca 1kg;PC;Mercearia;5,20;R$ 8,49;40
+5;7891000000059;Café Torrado 500g;UN;Mercearia;11,00;R$ 17,90;25
+6;7891000000069;Detergente Neutro 500ml;UN;Limpeza;1,30;R$ 2,79;60
+7;;Banana Prata;KILO;Hortifrúti;3,10;R$ 6,99;15,35
+8;;Tomate Italiano;KG;Hortifrúti;4,20;R$ 8,90;9,8
+9;;Pão Francês;KG;Padaria;9,00;R$ 16,90;0

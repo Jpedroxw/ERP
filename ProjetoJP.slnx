@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ProjetoJP.Shared/ProjetoJP.Shared.csproj" />
+    <Project Path="src/ProjetoJP.Controles/ProjetoJP.Controles.csproj" />
+    <Project Path="src/ProjetoJP.Api/ProjetoJP.Api.csproj" />
+    <Project Path="src/ProjetoJP.Pdv/ProjetoJP.Pdv.csproj" />
+    <Project Path="src/ProjetoJP.Gestao/ProjetoJP.Gestao.csproj" />
+    <Project Path="src/ProjetoJP.Master/ProjetoJP.Master.csproj" />
+    <Project Path="src/ProjetoJP.Instalador/ProjetoJP.Instalador.csproj" />
+  </Folder>
+  <Folder Name="/testes/">
+    <Project Path="testes/ProjetoJP.TestesValidacao/ProjetoJP.TestesValidacao.csproj" />
+    <Project Path="testes/ProjetoJP.TestesIntegracao/ProjetoJP.TestesIntegracao.csproj" />
+    <Project Path="testes/ProjetoJP.TestesBanco/ProjetoJP.TestesBanco.csproj" />
+    <Project Path="testes/ProjetoJP.TestesImportacao/ProjetoJP.TestesImportacao.csproj" />
+    <Project Path="testes/ProjetoJP.TestesPesquisaEstoque/ProjetoJP.TestesPesquisaEstoque.csproj" />
+    <Project Path="testes/ProjetoJP.TestesRegrasV8/ProjetoJP.TestesRegrasV8.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ProjetoJP.Gestao</RootNamespace>
+    <AssemblyName>ProjetoJP-Gestao</AssemblyName>
+    <AssemblyTitle>Projeto JP Gestão</AssemblyTitle>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>retaguarda.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Leitura dos bancos e planilhas de origem na tela "Importar dados" (só leitura). -->
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="10.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.*" />
+    <PackageReference Include="Npgsql" Version="10.0.*" />
+    <PackageReference Include="MySqlConnector" Version="2.*" />
+    <PackageReference Include="System.Data.Odbc" Version="10.0.*" />
+    <PackageReference Include="ExcelDataReader" Version="3.*" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- O ícone também vai dentro do programa: as janelas carregam daqui, sem depender do cache do Windows. -->
+    <EmbeddedResource Include="retaguarda.ico" LogicalName="ProjetoJP.Gestao.retaguarda.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoJP.Shared\ProjetoJP.Shared.csproj" />
+    <ProjectReference Include="..\ProjetoJP.Controles\ProjetoJP.Controles.csproj" />
+  </ItemGroup>
+
+
+</Project>

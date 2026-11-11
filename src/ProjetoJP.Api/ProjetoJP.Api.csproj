@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ProjetoJP.Api</RootNamespace>
+    <!-- Nome do arquivo na VPS: o servico erp-nf-api executa /opt/erp-nf/api/Erp.Api. Nao mude sem atualizar o servico. -->
+    <AssemblyName>Erp.Api</AssemblyName>
+    <AssemblyTitle>Projeto JP API</AssemblyTitle>
+    <UserSecretsId>erp-nao-fiscal-api</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.*" />
+    <!-- Mesma versao do Entity Framework nos testes e na API. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(ErpEfCoreVersion)" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="$(ErpEfCoreVersion)" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="$(ErpEfCoreVersion)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoJP.Shared\ProjetoJP.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

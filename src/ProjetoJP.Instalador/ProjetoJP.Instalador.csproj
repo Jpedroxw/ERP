@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Instalador do PDV e da Gestão, com o visual do sistema. Gerado pelo deploy\publicar.ps1, que monta o
+       pacote com os programas (64 e 32 bits) e passa em PacoteProgramas. Compilado para 32 bits: roda nos dois Windows. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ProjetoJP.Instalador</RootNamespace>
+    <AssemblyName>Instalar-ProjetoJP</AssemblyName>
+    <AssemblyTitle>Projeto JP Instalador</AssemblyTitle>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>..\ProjetoJP.Pdv\caixa.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\ProjetoJP.Pdv\caixa.ico" LogicalName="caixa.ico" />
+    <EmbeddedResource Include="..\ProjetoJP.Gestao\retaguarda.ico" LogicalName="retaguarda.ico" />
+    <!-- Os programas (zip montado pelo publicar.ps1). Sem ele o instalador abre e avisa que está vazio. -->
+    <EmbeddedResource Include="$(PacoteProgramas)" LogicalName="pacote.zip"
+                      Condition="'$(PacoteProgramas)' != '' And Exists('$(PacoteProgramas)')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoJP.Controles\ProjetoJP.Controles.csproj" />
+  </ItemGroup>
+
+</Project>
